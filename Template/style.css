@@ -1,0 +1,107 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #c3ecf7, #e5eaf7);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  .main-header {
+    width: 100%;
+    padding: 20px;
+    background: #4a90e2;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Chat container */
+  .chat-container {
+    background: white;
+    margin-top: 30px;
+    width: 95%;
+    max-width: 500px;
+    height: 75vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Chat box */
+  .chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #fdfdfd;
+    scroll-behavior: smooth;
+  }
+  
+  /* Chat message bubbles */
+  .chat-message {
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 20px;
+    max-width: 75%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 0.95rem;
+  }
+  
+  .chat-message.bot {
+    background: #e1f0ff;
+    align-self: flex-start;
+    border-top-left-radius: 0;
+  }
+  
+  .chat-message.user {
+    background: #d0f0c0;
+    align-self: flex-end;
+    border-top-right-radius: 0;
+  }
+  
+  /* Input area */
+  .input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background-color: #f7f9fb;
+  }
+  
+  #user-input {
+    flex: 1;
+    padding: 12px 14px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  button {
+    margin-left: 10px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357abd;
+  }
+  
